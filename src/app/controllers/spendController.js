@@ -28,7 +28,7 @@ router.get('/show/:spendId', async (req, res) => {
 // Rota para criação de gasto
 router.post('/create', async (req, res) => {
   try {
-    const spend = await Spend.create({...req.body, user: req.userId});
+    const spend = await Spend.create({...req.body});
     return res.send({ spend });
   } catch (err) {
     return res.status(400).send({ error: 'Error to create a new spend: ' + err })

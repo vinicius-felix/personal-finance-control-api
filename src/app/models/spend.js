@@ -7,7 +7,7 @@ const SpendSchema = new mongoose.Schema({
     require: true,
   },
 
-  category: {
+  name: {
     type: String,
     required: true
   },
