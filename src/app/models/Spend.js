@@ -1,10 +1,15 @@
 const mongoose = require('../../database');
 
-const GainSchema = new mongoose.Schema({
+const SpendSchema = new mongoose.Schema({
 
   date: {
     type: String,
     require: true,
+  },
+
+  name: {
+    type: String,
+    required: true
   },
 
   description: {
@@ -29,6 +34,6 @@ const GainSchema = new mongoose.Schema({
   },
 });
 
-const Gain = mongoose.model('Gain', GainSchema);
+const Spend = mongoose.model('Spend', SpendSchema);
 
-module.exports = Gain;
+module.exports = Spend;
