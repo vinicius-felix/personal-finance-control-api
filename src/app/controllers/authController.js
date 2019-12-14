@@ -78,12 +78,12 @@ router.post('/authenticate', async (req, res) => {
 
   // Verifica se o usuario existe
   if(!user)
-    return res.status(400).send({ error: "User not found." });
-
+    return res.status(400).send({ error: "User not found." });  
+  
   // Compara a senha informada cadastrado com a senha do usuario
   if(!await bcrypt.compare(password, user.password))
     return res.status(400).send({ error: "Invalid password." });
-
+  
   // Removendo a senha
   user.password = undefined;
 
