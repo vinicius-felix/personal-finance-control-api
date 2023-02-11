@@ -1,9 +1,9 @@
 const express = require('express');
-const authMiddleware = require('../middlewares/auth')
+// const authMiddleware = require('../middlewares/auth')
 const router = express.Router();
 const Spend = require('../models/Spend');
 
-router.use(authMiddleware);
+// router.use(authMiddleware);
 
 // Rota de listagem de todos os gastos
 router.get('/', async (req, res) => {

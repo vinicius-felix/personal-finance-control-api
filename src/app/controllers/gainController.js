@@ -1,9 +1,9 @@
 const express = require('express');
-const authMiddleware = require('../middlewares/auth')
+// const authMiddleware = require('../middlewares/auth')
 const router = express.Router();
 const Gain = require('../models/Gain');
 
-router.use(authMiddleware);
+// router.use(authMiddleware);
 
 // Rota de listagem de todos os ganhos
 router.get('/', async (req, res) => {

@@ -1,3 +1,3 @@
 module.exports = {
- DB: 'mongodb://localhost:3002/personal-finance-control'
+ DB: 'mongodb://localhost:27017/personal-finance-control'
 }

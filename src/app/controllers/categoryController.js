@@ -3,7 +3,7 @@ const authMiddleware = require('../middlewares/auth')
 const router = express.Router();
 const Category = require('../models/Category');
 
-router.use(authMiddleware);
+// router.use(authMiddleware);
 
 // Rota de listagem de todos as categorias
 router.get('/', async (req, res) => {
